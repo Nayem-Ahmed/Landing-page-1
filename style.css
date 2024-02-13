@@ -8,6 +8,13 @@ body {
     --color1: #FFF ;
     --color2: gray ;
 }
+img{
+    max-width: 100%;
+}
+.fixed-width{
+    max-width: 1200px;
+    margin: auto;
+}
 .nav-bar {
     width: 100%;
     display: flex;
@@ -58,13 +65,46 @@ body {
     right: 20px;
 }
 #check {display: none;}
-.menu-btn{
+/* .menu-btn{
     background-color: blue;
     border: none;
     color: white;
     padding: 8px 15px;
+} */
+/* Banner */
+/* .banner{
+    display: flex;
+    flex-direction:  row;
+    padding: 10px;
+    
+} */
+/* .banner-img img{
+    width: 500px;   
+} */
+/* service */
+ 
+.card-1 i{
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    color: blueviolet;
+    border: 1px solid blueviolet;
 }
-@media(max-width: 610px){
+
+
+
+
+
+
+
+
+
+
+
+/* small device */
+@media(max-width: 576px){
     .menu {
         flex-direction: column;
         align-items: center;
@@ -86,4 +126,8 @@ body {
         left: -50px;
         position: relative;
     }
+}
+/* medium device */
+@media screen and (max-width: 576px) and (max-width: 992px){
+    
 }

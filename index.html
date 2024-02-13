@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- google font -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700&display=swap');
@@ -17,24 +19,62 @@
 
 <body>
     <header>
-        <nav>
-            <ul class='nav-bar'>
-                <li class='logo'><a href='#'><img src='./image/logo.webp'/></a></li>
-                <input type='checkbox' id='check' />
-                <span class="menu">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Products</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Hire</a></li>
-                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
-                </span>
-                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
-                <button class="menu-btn" type="button">Contact Us</button>
-            </ul>
-        </nav>
+        <div class="fixed-width">
+            <nav>
+                <ul class='nav-bar'>
+                    <li class='logo'><a href='#'><img src='./image/logo.webp' /></a></li>
+                    <input type='checkbox' id='check' />
+                    <span class="menu">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Hire</a></li>
+                        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                    </span>
+                    <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+                    <button class="menu-btn bg-blue-500 px-3 py-1 text-white" type="button">Contact Us</button>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main></main>
+    <main>
+        <div class="fixed-width">
+            <section class="banner flex p-3 flex-col md:flex-row">
+                <div>
+                    <h2 class="font-semibold  text-2xl mb-3">Great product is<br> built by great teams</h2>
+                    <p>As a developer with us, you'll have the opportunity to work on cutting-edge projects <br>that
+                        push the boundaries of innovation.</p>
+                    <button class="menu-btn bg-blue-500 px-3 py-1 text-white mt-5" type="button">More Explore</button>
+
+                </div>
+                <div class="banner-img">
+                    <img class="w-96 object-center" src="./image/lbanner.jpg" alt="">
+                </div>
+
+            </section>
+            <section class="service-section p-3 flex md:flex-row flex-col gap-4">
+                <div class="card-1 w-96">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design & Development</h2>
+                    <p>What sets us apart is our commitment to fostering a collaborative and supportive environment
+                        where creativity and innovation flourish.</p>
+                </div>
+                <div class="card-1 w-96">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <h2>Mobile App Development</h2>
+                    <p>What sets us apart is our commitment to fostering a collaborative and supportive environment
+                        where creativity and innovation flourish.</p>
+                </div>
+                <div class="card-1 w-96">
+                    <i class="fa-brands fa-uncharted"></i>
+                    <h2>Software Development</h2>
+                    <p class="">What sets us apart is our commitment to fostering a collaborative and supportive environment
+                        where creativity and innovation flourish.</p>
+                </div>
+            </section>
+        </div>
+    </main>
     <footer></footer>
 
 </body>
